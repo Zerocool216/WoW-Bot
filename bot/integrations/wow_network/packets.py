@@ -1,0 +1,38 @@
+class Opcodes:
+    """
+    Mapeo centralizado de Opcodes (códigos de operación) del protocolo WoW 3.3.5a.
+    Previene el uso de números mágicos esparcidos por el código.
+    """
+    # === Auth Server Opcodes ===
+    AUTH_LOGON_CHALLENGE = 0x00
+    AUTH_LOGON_PROOF = 0x01
+    REALM_LIST = 0x10
+    
+    # === World Server Opcodes ===
+    CMSG_CHAR_ENUM = 0x0037
+    SMSG_CHAR_ENUM = 0x003B
+    CMSG_PLAYER_LOGIN = 0x003D
+    CMSG_NAME_QUERY = 0x0050
+    SMSG_NAME_QUERY_RESPONSE = 0x0051
+    CMSG_GUILD_ROSTER = 0x0089
+    SMSG_GUILD_ROSTER = 0x008A
+    SMSG_GUILD_COMMAND_RESULT = 0x008B
+    CMSG_GUILD_MOTD = 0x008E
+    SMSG_GUILD_EVENT = 0x0092
+    CMSG_MESSAGECHAT = 0x0095
+    SMSG_MESSAGECHAT = 0x0096
+    CMSG_JOIN_CHANNEL = 0x0097
+    SMSG_NOTIFICATION = 0x00B5
+    SMSG_CHARACTER_LOGIN_FAILED = 0x01AE
+    CMSG_PING = 0x01DC
+    SMSG_PONG = 0x01DD
+    SMSG_AUTH_CHALLENGE = 0x01EC
+    CMSG_AUTH_SESSION = 0x01ED
+    SMSG_AUTH_RESPONSE = 0x01EE
+    SMSG_LOGIN_VERIFY_WORLD = 0x0236
+    SMSG_AUTH_WAIT_QUEUE = 0x0287
+    SMSG_WARDEN_DATA = 0x02E6
+    CMSG_WARDEN_DATA = 0x02E7
+    SMSG_TIME_SYNC_REQ = 0x0390
+    CMSG_TIME_SYNC_RESP = 0x0391
+    CMSG_KEEP_ALIVE = 0x0407
